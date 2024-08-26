@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon/heart-svgrepo-com.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#fotos">Obras</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="art">
+            <p>Artista <br>Digital</p>
+        </div>
+
+        <div class="name">
+            <p class="unbounded-custom">Val <br>Aguilera</p>
+        </div>
+    </header>
+
+    <div class="about" id="about">
+        Gods plan hermano
+    </div>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuList = document.querySelector('.menu ul');
+
+        mobileMenu.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
