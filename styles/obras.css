@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+}
+
+body {
+    background-color: #0C0D21;
+    min-height: 100vh; /* Asegura que el fondo ocupe al menos toda la altura de la pantalla */
+    display: flex; /* Usar flexbox para centrar el contenedor */
+    flex-direction: column; /* Cambiar a columna para incluir el título */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.titulo {
+    color: #CF9AF2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px; /* Espacio entre el título y el contenedor */
+    text-align: center; /* Centrar el texto */
+    margin-top: 5%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    grid-template-rows: auto;
+    max-width: 1200px; /* Limitar el ancho máximo del contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-items: center; /* Centra los elementos dentro de cada celda */
+}
+
+.contenedor > div {
+    display: flex; /* Usar flexbox en cada celda */
+    flex-direction: column; /* Colocar imagen y texto en columna */
+    align-items: center; /* Centrar elementos dentro de cada celda */
+    text-align: center; /* Centrar el texto */
+}
+
+img {
+    max-width: 80%; /* Cambia este valor para hacer las imágenes más pequeñas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+p{
+    color: #abaed6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Media Query para pantallas medianas */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas también */
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        justify-items: center; /* Centrar elementos en pantallas pequeñas */
+    }
+}

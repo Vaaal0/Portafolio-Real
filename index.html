@@ -23,7 +23,7 @@
             </div>
             <ul>
                 <li><a href="#about">Sobre mi</a></li>
-                <li><a href="#fotos">Obras</a></li>
+                <li><a href="obras.html">Obras</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -38,20 +38,23 @@
     </header>
 
     <div class="about" id="about">
-        <div>
-            <p>Sobre mi</p>
-            <p style="color: #3B3A3A; font-size: 1.5rem;" >
-                <font color="#A3127A">Valeria Aguilera</font> es una artista originaria de Toluca, México, que se
-                especializa en la creación de obras
-                interactivas que fusionan el arte con la tecnología. Actualmente, cursa la carrera de Arte y
-                Comunicación Digitales en la Universidad Autónoma Metropolitana. Su trabajo se centra en cómputo físico
-                y diseño web buscando generar
-                un impacto significativo en los espectadores. Valeria se dedica a crear experiencias artísticas que
-                invitan a la interacción,
-                desafiando las percepciones tradicionales del arte y fomentando un diálogo dinámico entre la obra y el
-                público.
-
-            </p>
+        <div class="about-content">
+            <img src="img/Iconic.png" alt="Valeria Aguilera" class="about-image">
+            <div class="about-text">
+                <p style="font-size: 2rem;">Sobre mi</p>
+                <p style=" font-size: 1.5rem;">
+                    Valeria Aguilera es una artista originaria de Toluca, México, que se
+                    especializa en la creación de obras interactivas que fusionan el arte con la tecnología.
+                    Actualmente, cursa la carrera de Arte y
+                    Comunicación Digitales en la Universidad Autónoma Metropolitana. Su trabajo se centra en cómputo
+                    físico
+                    y diseño web buscando generar un impacto significativo en los espectadores. Valeria se dedica a
+                    crear experiencias artísticas que
+                    invitan a la interacción, desafiando las percepciones tradicionales del arte y fomentando un diálogo
+                    dinámico entre la obra y el
+                    público.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -61,6 +64,19 @@
 
         mobileMenu.addEventListener('click', () => {
             menuList.classList.toggle('active');
+        });
+
+        window.addEventListener('scroll', function () {
+            const nameElement = document.querySelector('.name');
+            const menuElement = document.querySelector('.menu');
+            const menuBottom = menuElement.getBoundingClientRect().bottom;
+
+            // Si la parte inferior del menú está fuera de la vista
+            if (menuBottom < 0) {
+                nameElement.classList.add('hidden'); // Oculta el texto
+            } else {
+                nameElement.classList.remove('hidden'); // Muestra el texto
+            }
         });
     </script>
 
