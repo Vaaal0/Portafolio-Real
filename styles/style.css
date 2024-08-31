@@ -166,6 +166,7 @@ header {
 .about-content {
     display: flex; /* Cambiado a flex */
     align-items: flex-start; /* Alinear al inicio */
+    text-align: justify;
 }
 
 .about-image {
