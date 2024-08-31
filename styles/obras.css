@@ -10,6 +10,7 @@ body {
     display: flex; /* Usar flexbox para centrar el contenedor */
     flex-direction: column; /* Cambiar a columna para incluir el título */
     align-items: center; /* Centrar horizontalmente */
+    padding-bottom: 10%;
 }
 
 .titulo {
@@ -42,6 +43,12 @@ img {
     max-width: 80%; /* Cambia este valor para hacer las imágenes más pequeñas */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Bordes redondeados opcionales */
+    transition: max-width 0.3s ease, border-radius 0.3s ease; /* Añade transición a max-width y border-radius */
+}
+
+img:hover {
+    max-width: 85%; /* Aumenta el tamaño de la imagen al pasar el mouse */
+    border-radius: 80px; /* Cambia el radio de los bordes al pasar el mouse */
 }
 
 p{
