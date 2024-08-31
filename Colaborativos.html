@@ -14,6 +14,21 @@
 </head>
 
 <body>
+
+    <header>
+        <nav class="menu">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 class="titulo">Obras Colaborativas</h1>
     <div class="contenedor">
         <div>
@@ -101,12 +116,42 @@
             <a href="https://puntadalenta.netlify.app/ ">
                 <h2>Puntada lenta</h2>
             </a>
-
+            <div class="Galeria">
+                <img src="img/puntada/inicio.png" alt="Página de inicio">
+                <img src="img/puntada/yo.jpg" alt="Foto de sesión">
+                <img src="img/puntada/electronica.png" alt="Electrónica de la pieza">
+            </div>
+            <h4> Autores:</h4>
+            <p>Margarita Aguilar, Daniela Corona, Nashla Arriaga, Gerardo Fuentes, Brisa Quevedo, Valeria Quiroz, Jose
+                Maria Alvarado, Lizeth Hernandez, Luis Rizo</p>
         </div>
+        <div>
+            <p style="font-weight: 500;">
+                Performance y página web
+            </p>
+            <p>
+                El proyecto destaca la necesidad urgente de cuestionar los estándares y prácticas de la industria de
+                la moda actual, impulsadas por el fast fashion. Se centra en la reutilización y reciclaje de prendas
+                usadas para combatir el consumo excesivo, transformando estas prendas en piezas de moda únicas.
+                A través de una pasarela, el objetivo es exhibir no solo las prendas recicladas, sino también
+                provocar una reflexión en la audiencia sobre sus hábitos de consumo y visualizar un futuro en el que la
+                moda
+                se caracterice por la creatividad, la innovación y el respeto por el medio ambiente. Además, se crea
+                una página web que satiriza la sobreexplotación de recursos en la producción de ropa.
+            </p>
+        </div>
+
         <div>
             <h2>Corazón no name</h2>
         </div>
-    </div>
+        <script>
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuList = document.querySelector('.menu ul');
+
+            mobileMenu.addEventListener('click', () => {
+                menuList.classList.toggle('active');
+            });
+        </script>
 </body>
 
 </html>
