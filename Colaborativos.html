@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obras colaborativas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
     <link href="styles/Colaborativos.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://unpkg.com/font-awesome/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
@@ -36,17 +35,43 @@
                 <h2>Patitas en la calle</h2>
             </a>
 
-            <div class="Galeria">
-                <img src="img/patitas/inicio.png" alt="Página de inicio">
-                <img src="img/patitas/historias.png" alt="Comienzo de las historias">
-                <img src="img/patitas/mapa.png" alt="Mapa de Lerma">
+            <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/patitas/inicio.png" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/patitas/historias.png" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/patitas/mapa.png" alt="New York" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <h4> Autores:</h4>
+
+            <h4> Autoras:</h4>
             <p> Brisa Quevedo <br> Valeria Quiroz <br> Daniela Corona <br> Gerardo Fuentes</p>
         </div>
         <div>
             <p style="font-weight: 500;">
-                Página web interactiva
+                Sitio web interactiva - 2023
             </p>
             <p>
                 "Patitas en la calle" es una página web interactiva creada con el objetivo de generar conciencia sobre
@@ -63,17 +88,43 @@
 
         <div>
             <h2>Resplandor de la memoria</h2>
-            <div class="Galeria">
-                <img src="img/resplandor/instalacion.jpg" alt="Inicio de la instalación">
-                <img src="img/resplandor/asi se ve.jpg" alt="Como se veía">
-                <img src="img/resplandor/parte 2.jpg" alt="Módulo 2">
+            <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/resplandor/instalacion.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/resplandor/asi se ve.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/resplandor/parte 2.jpg" alt="New York" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <h4> Autores:</h4>
+
+            <h4> Autoras:</h4>
             <p> Brisa Quevedo <br> Valeria Quiroz <br> Daniela Corona </p>
         </div>
         <div>
             <p style="font-weight: 500;">
-                Instalación
+                Instalación - 2023
             </p>
             <p>
                 Esta instalación artística está diseñada para simbolizar la importancia de la memoria y la imaginación.
@@ -89,17 +140,42 @@
             <a href="https://raices-a-la-distancia.netlify.app/ ">
                 <h2>Raíces a la distancia</h2>
             </a>
-            <div class="Galeria">
-                <img src="img/raices/inicio.png" alt="Página de inicio">
-                <img src="img/raices/fin.png" alt="Comienzo de las historias">
-                <img src="img/raices/historia.png" alt="Mapa de Lerma">
+            <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/raices/inicio.png" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/raices/historia.png" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/raices/fin.png" alt="New York" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
             <h4> Autores:</h4>
             <p> Brisa Quevedo <br> Valeria Quiroz <br> Daniela Corona </p>
         </div>
         <div>
             <p style="font-weight: 500;">
-                Página web interactiva
+                Sitio web interactiva
             </p>
             <p>
                 Raíces a la distancia es un proyecto enfocado en la comunidad foránea de la UAM Lerma, reflejando los
@@ -116,10 +192,35 @@
             <a href="https://puntadalenta.netlify.app/ ">
                 <h2>Puntada lenta</h2>
             </a>
-            <div class="Galeria">
-                <img src="img/puntada/inicio.png" alt="Página de inicio">
-                <img src="img/puntada/yo.jpg" alt="Foto de sesión">
-                <img src="img/puntada/electronica.png" alt="Electrónica de la pieza">
+            <div id="demo4" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/puntada/inicio.png" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/puntada/yo.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/puntada/electronica.png" alt="New York" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
             <h4> Autores:</h4>
             <p>Margarita Aguilar, Daniela Corona, Nashla Arriaga, Gerardo Fuentes, Brisa Quevedo, Valeria Quiroz, Jose
@@ -127,7 +228,7 @@
         </div>
         <div>
             <p style="font-weight: 500;">
-                Performance y página web
+                Performance y sitio web
             </p>
             <p>
                 El proyecto destaca la necesidad urgente de cuestionar los estándares y prácticas de la industria de
