@@ -106,6 +106,8 @@ header {
         flex-direction: column; /* Colocar la imagen encima del texto */
         align-items: center; /* Centrar el contenido */
     }
+
+    
 }
 
 .name {
@@ -192,9 +194,16 @@ header {
     .about-image {
         margin-bottom: 20px; /* Espacio entre la imagen y el texto */
     }
+
+    .footer{
+        position: absolute;
+        top: 200%;
+    }
 }
 
 .hidden {
     opacity: 0; /* Cambia la opacidad a 0 */
     transition: opacity 1s ease; /* Añade una transición suave */
 }
+
+

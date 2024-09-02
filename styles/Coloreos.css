@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .contenedor {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas también */
     }
@@ -11,6 +11,7 @@
         justify-items: center; /* Centrar elementos en pantallas pequeñas */
     }
 }
+
 
 * {
     box-sizing: border-box;
@@ -39,7 +40,7 @@ p {
     text-align: justify;
     color: #abaed6;
     padding: 10%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 
