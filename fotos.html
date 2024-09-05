@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="styles/fotos.css" type="text/css">
 </head>
 <body>
+    <header>
+        <nav class="menu">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 class="titulo">Fotos</h1> 
     <div class="contenedor">
         <p>mis fotos</p>
@@ -14,5 +28,13 @@
             <img src="" alt="">
         </div>
     </div>
+    <script>
+                const mobileMenu = document.getElementById('mobile-menu');
+        const menuList = document.querySelector('.menu ul');
+
+        mobileMenu.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
