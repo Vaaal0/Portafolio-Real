@@ -131,11 +131,7 @@ textarea {
     background-color: #c8cbf7;
 }
 
-input:focus,
-textarea:focus {
-    /* Destacado adicional para elementos que tienen el cursor */
 
-}
 
 textarea {
     /* Alinear los campos de texto multilínea con sus etiquetas */
