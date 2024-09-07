@@ -1,19 +1,3 @@
-
-/* Media Query para pantallas medianas */
-@media screen and (max-width: 768px) {
-    .contenedor {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas también */
-    }
-}
-
-/* Media Query para pantallas pequeñas */
-@media screen and (max-width: 480px) {
-    .contenedor {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-        justify-items: center; /* Centrar elementos en pantallas pequeñas */
-    }
-}
-
 * {
     box-sizing: border-box;
     margin: 0; /* Eliminar márgenes por defecto */
@@ -32,7 +16,6 @@ body {
 
 .titulo {
     color: #CF9AF2;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 20px; /* Espacio entre el título y el contenedor */
     text-align: center; /* Centrar el texto */
     margin-top: 5%;
@@ -40,7 +23,7 @@ body {
 
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Dos columnas en pantallas grandes */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
     grid-template-rows: auto;
     max-width: 1200px; /* Limitar el ancho máximo del contenedor */
     width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
@@ -70,7 +53,7 @@ img:hover {
 
 p{
     color: #abaed6;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -122,6 +105,21 @@ header{
     width: 25px;
     background-color: white;
     margin: 4px;
+}
+
+/* Media Query para pantallas medianas */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas también */
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        justify-items: center; /* Centrar elementos en pantallas pequeñas */
+    }
 }
 
 /* Media query para pantallas pequeñas */
