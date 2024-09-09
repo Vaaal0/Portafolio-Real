@@ -42,19 +42,6 @@ body {
     text-align: center; /* Centrar el texto */
 }
 
-img {
-    max-width: 80%; /* Cambia este valor para hacer las imágenes más pequeñas */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    transition: max-width 0.3s ease, border-radius 0.3s ease; /* Añade transición a max-width y border-radius */
-}
-
-img:hover {
-    max-width: 90%; /* Aumenta el tamaño de la imagen al pasar el mouse */
-}
-
-
-
 .redes{
     display: flex;
     flex-wrap: wrap;
@@ -88,75 +75,7 @@ img:hover {
 
 }
 
-form {
-    /* Centrar el formulario en la página */
-    margin: 0 auto;
-    width: 400px;
-    /* Esquema del formulario */
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-}
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-form li + li {
-    margin-top: 1em;
-}
-
-label {
-    /* Tamaño y alineación uniforme */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-}
-
-input,
-textarea {
-    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
-        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
-    font: 1rem sans-serif;
-
-    /* Tamaño uniforme del campo de texto */
-    width: 300px;
-    box-sizing: border-box;
-
-
-    /* Hacer coincidir los bordes del campo del formulario */
-    border-radius: 5px;
-    background-color: #c8cbf7;
-}
-
-
-
-textarea {
-    /* Alinear los campos de texto multilínea con sus etiquetas */
-    vertical-align: top;
-    color: #abaed6;
-
-    /* Proporcionar espacio para escribir texto */
-    height: 5em;
-}
-
-.button {
-    /* Alinear los botones con los campos de texto */
-    padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
-}
-
-button {
-    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
-        entre las etiquetas y sus campos de texto */
-    margin-left: 0.5em;
-}
-
-.placeholder{
-    color: #0C0D21;
-}
-  
 @media screen and (max-width: 770px) {
     .contenedor {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas también */
@@ -173,3 +92,106 @@ button {
         padding: 15%;
     }
 }
+
+header{
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    position: absolute; /* Para posicionar elementos dentro */ 
+    top: 5%; 
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    position: absolute; /* Cambiar a absoluto para moverlo */
+    right: 10%; /* Ajusta según sea necesario */
+    top: 10%; /* Ajusta según sea necesario */
+    font-weight: 400;
+}
+
+/* Estilo del menú */
+.menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 50px; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave del color al pasar el cursor */
+}
+
+.menu a:hover {
+    color: rgb(255, 162, 219); /* Color al pasar el cursor */
+}
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: flex-end; /* Alinear a la derecha */
+        right: 10px;
+        top: 10px;
+    }
+
+    .menu ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column; /* Cambiar a columna */
+        width: 100%; /* Ancho completo */
+        top: 80px; /* Ajustar según la altura del menú */
+        right: 0; /* Alinear a la derecha */
+    }
+
+    .menu ul.active {
+        display: flex; /* Mostrar el menú cuando esté activo */
+        background-color: #0C0D21;
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el botón de menú en pantallas pequeñas */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espaciado vertical entre los elementos */
+        text-align: right; /* Alinear el texto a la derecha */
+    }
+
+    header {
+        position: static; /* Quitar el posicionamiento absoluto del header */
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        justify-items: center; /* Centrar elementos en pantallas pequeñas */
+        padding: 5%;
+    }
+
+    .menu a:hover {
+        color: rgb(255, 162, 219); /* Color al pasar el cursor */
+    }
+
+    .titulo{
+        padding-top: 7%;
+    }
+
+}
+
