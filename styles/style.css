@@ -65,27 +65,35 @@ header {
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     .menu {
+        position: absolute; /* Cambiar a posición absoluta */
         flex-direction: column; /* Cambiar a columna */
         align-items: flex-end; /* Alinear a la derecha */
         right: 10px;
         top: 10px;
+        z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
     }
 
     .menu ul {
         display: none; /* Ocultar el menú por defecto */
         flex-direction: column; /* Cambiar a columna */
         width: 100%; /* Ancho completo */
-        position: absolute; /* Posicionar absolutamente */
         top: 80px; /* Ajustar según la altura del menú */
         right: 0; /* Alinear a la derecha */
+        margin: 0; /* Asegúrate de que no haya margen */
+        padding: 0; /* Asegúrate de que no haya relleno */
     }
 
     .menu ul.active {
         display: flex; /* Mostrar el menú cuando esté activo */
+        
     }
 
     .menu-toggle {
         display: flex; /* Mostrar el botón de menú en pantallas pequeñas */
+        width: 40px; /* Ajusta según tus necesidades */
+        height: 40px; /* Ajusta según tus necesidades */
+        align-items: center; /* Centrar contenido dentro del botón */
+        justify-content: center; /* Centrar contenido dentro del botón */
     }
 
     .menu li {
@@ -101,13 +109,11 @@ header {
         position: static; /* Cambiar a position: static para que se oculte */
     }
 
-    .about-content {
-        display: flex; /* Cambiar a flex para controlar el orden */
-        flex-direction: column; /* Colocar la imagen encima del texto */
-        align-items: center; /* Centrar el contenido */
-    }
 
-    
+
+    .titulo {
+        padding: 5%;
+    }
 }
 
 .name {

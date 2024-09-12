@@ -88,7 +88,7 @@ header{
 
     .menu ul.active {
         display: flex; /* Mostrar el menú cuando esté activo */
-        background-color: #1a0c4d;
+        background-color: #0C0D21;
         padding: 7px;
         border-radius: 7px;
         
@@ -144,10 +144,11 @@ p {
     text-align: center;
 }
 
-.video{
+video{
     position: relative;
     height: auto; /* Mantiene la proporción de la imagen */
     align-items: center;
+    display: flex;
 
 }
 
