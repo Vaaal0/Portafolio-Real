@@ -22,10 +22,11 @@ header{
 .menu {
     display: flex;
     justify-content: flex-end; /* Alinear a la derecha */
-    position: absolute; /* Cambiar a absoluto para moverlo */
-    right: 10%; /* Ajusta según sea necesario */
-    top: 10%; /* Ajusta según sea necesario */
-    font-weight: 400;
+    align-items: center;
+    position: relative; /* Para posicionar el menú correctamente */
+    right: 5%;
+    top: 7%;
+    font-weight: 500;
 }
 
 /* Estilo del menú */
@@ -67,10 +68,12 @@ header{
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     .menu {
+        position: absolute; /* Cambiar a posición absoluta */
         flex-direction: column; /* Cambiar a columna */
         align-items: flex-end; /* Alinear a la derecha */
         right: 10px;
         top: 10px;
+        z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
     }
 
     .menu ul {
@@ -79,21 +82,29 @@ header{
         width: 100%; /* Ancho completo */
         top: 80px; /* Ajustar según la altura del menú */
         right: 0; /* Alinear a la derecha */
+        margin: 0; /* Asegúrate de que no haya margen */
+        padding: 0; /* Asegúrate de que no haya relleno */
     }
 
     .menu ul.active {
         display: flex; /* Mostrar el menú cuando esté activo */
-        background-color: #0C0D21;
+        background-color: #1a0c4d;
+        padding: 7px;
+        border-radius: 7px;
+        
     }
 
     .menu-toggle {
         display: flex; /* Mostrar el botón de menú en pantallas pequeñas */
+        width: 40px; /* Ajusta según tus necesidades */
+        height: 40px; /* Ajusta según tus necesidades */
+        align-items: center; /* Centrar contenido dentro del botón */
+        justify-content: center; /* Centrar contenido dentro del botón */
     }
 
     .menu li {
         margin: 10px 0; /* Espaciado vertical entre los elementos */
         text-align: right; /* Alinear el texto a la derecha */
- 
     }
 
     header {
@@ -104,13 +115,9 @@ header{
         position: static; /* Cambiar a position: static para que se oculte */
     }
 
-    .about-content {
-        display: flex; /* Cambiar a flex para controlar el orden */
-        flex-direction: column; /* Colocar la imagen encima del texto */
-        align-items: center; /* Centrar el contenido */
-    }
 
-    .titulo{
+
+    .titulo {
         padding: 5%;
     }
 }
@@ -121,8 +128,8 @@ header{
     grid-template-columns: repeat(2, 1fr);
     max-width: 1200px;
     width: 100%;
-    padding: 10px;
-    gap: 20px;
+    padding: 30px;
+    gap: 40px;
     justify-items: center;
 }
 
@@ -137,14 +144,19 @@ p {
     text-align: center;
 }
 
+.video{
+    position: relative;
+    height: auto; /* Mantiene la proporción de la imagen */
+    align-items: center;
 
+}
 
 .titulo {
     color: #CF9AF2;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 20px; /* Espacio entre el título y el contenedor */
     text-align: center; /* Centrar el texto */
-    margin-top: 5%;
+    margin-top: 10%;
     font-weight: 300;
 }
 
@@ -182,6 +194,4 @@ a:hover{
         padding: 5%;
     }
 }
- img{
-    width: 30%;
- }
+

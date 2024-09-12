@@ -65,10 +65,11 @@ header{
 .menu {
     display: flex;
     justify-content: flex-end; /* Alinear a la derecha */
-    position: absolute; /* Cambiar a absoluto para moverlo */
-    right: 10%; /* Ajusta según sea necesario */
-    top: 10%; /* Ajusta según sea necesario */
-    font-weight: 400;
+    align-items: center;
+    position: relative; /* Para posicionar el menú correctamente */
+    right: 5%;
+    top: 7%;
+    font-weight: 500;
 }
 
 /* Estilo del menú */

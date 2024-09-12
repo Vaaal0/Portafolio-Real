@@ -26,14 +26,15 @@ body {
     flex-direction: column; /* Cambiar a columna para incluir el título */
     align-items: center; /* Centrar horizontalmente */
     padding-bottom: 10%;
+    color: #abaed6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .titulo {
     color: #CF9AF2;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 20px; /* Espacio entre el título y el contenedor */
     text-align: center; /* Centrar el texto */
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 .contenedor {
@@ -69,4 +70,104 @@ img:hover {
 p{
     color: #abaed6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    position: absolute; /* Para posicionar elementos dentro */ 
+    top: 5%; 
+}
+
+
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    align-items: center;
+    position: relative; /* Para posicionar el menú correctamente */
+    right: 5%;
+    top: 7%;
+    font-weight: 500;
+}
+
+/* Estilo del menú */
+.menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 50px; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave del color al pasar el cursor */
+}
+
+.menu a:hover {
+    color: rgb(255, 162, 219); /* Color al pasar el cursor */
+}
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: flex-end; /* Alinear a la derecha */
+        right: 10px;
+        top: 10px;
+    }
+
+    .menu ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column; /* Cambiar a columna */
+        width: 100%; /* Ancho completo */
+        position: absolute; /* Posicionar absolutamente */
+        top: 80px; /* Ajustar según la altura del menú */
+        right: 0; /* Alinear a la derecha */
+    }
+
+    .menu ul.active {
+        display: flex; /* Mostrar el menú cuando esté activo */
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el botón de menú en pantallas pequeñas */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espaciado vertical entre los elementos */
+        text-align: right; /* Alinear el texto a la derecha */
+    }
+
+    header {
+        position: static; /* Quitar el posicionamiento absoluto del header */
+    }
+
+    .name {
+        position: static; /* Cambiar a position: static para que se oculte */
+    }
+
+    .about-content {
+        display: flex; /* Cambiar a flex para controlar el orden */
+        flex-direction: column; /* Colocar la imagen encima del texto */
+        align-items: center; /* Centrar el contenido */
+    }
+
+    
 }
