@@ -181,7 +181,7 @@ header {
 
 .about-image {
     width: 50vw; /* La imagen ocupará el 50% del ancho de la ventana */
-    max-width: 400px; /* Limitar el tamaño máximo en pantallas grandes */
+    max-width: 60%; /* Limitar el tamaño máximo en pantallas grandes */
     height: auto; /* Mantiene la proporción */
     border-radius: 50%; /* estilo redondeado */
     border: solid 14px #B153B1; /* Mantener el borde si es necesario */
