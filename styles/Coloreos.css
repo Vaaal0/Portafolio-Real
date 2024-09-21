@@ -18,7 +18,7 @@ body {
 .titulo {
     color: #a39af2;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 20px; /* Espacio entre el título y el contenedor */
+    margin-bottom: 3%; /* Espacio entre el título y el contenedor */
     text-align: center; /* Centrar el texto */
     margin-top: 5%;
 }
@@ -26,7 +26,8 @@ body {
 p {
     text-align: justify;
     color: #abaed6;
-    padding: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
     font-size: 1.3rem;
 }
 
@@ -115,7 +116,7 @@ header{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu {
         position: absolute; /* Cambiar a posición absoluta */
         flex-direction: column; /* Cambiar a columna */
@@ -171,9 +172,13 @@ header{
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
     .contenedor {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas también */
+    }
+    p{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 

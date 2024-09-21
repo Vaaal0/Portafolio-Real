@@ -124,7 +124,7 @@ header{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu {
         position: absolute; /* Cambiar a posición absoluta */
         flex-direction: column; /* Cambiar a columna */

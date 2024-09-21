@@ -175,7 +175,7 @@ header {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu {
         position: absolute; /* Cambiar a posición absoluta */
         flex-direction: column; /* Cambiar a columna */
@@ -256,7 +256,7 @@ header {
 form {
     background: rgba(255, 255, 255, 0.3);
     padding: 3em;
-    height: 320px;
+    height: 40%;
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -294,6 +294,99 @@ form a:active {
 
 form input {
     background: transparent;
+    width: 2rem;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5000px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+form input:hover {
+    background: rgba(255, 255, 255, 0.185);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+form textarea:hover {
+    background: rgba(255, 255, 255, 0.185);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+form button{
+    background: rgba(173, 173, 173, 0.263);
+    border-radius: 35px;
+    color: #ffffff;
+    padding: 20px;
+    border-color: #4d41b680;
+}
+
+form button:hover{
+    background: transparent;
+    background-color: #c1b7c6a9;
+    box-shadow: none;
+    border-color: #af88a0d8;
+}
+
+
+
+form ul {
+  list-style-type: none;
+}
+
+form li {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+}
+
+form input[type=text],
+form input[type=email], 
+form input[type=textarea],
+form textarea {
+  width: calc(100% - 20px);
+  padding:10px;
+}
+
+
+
+form:hover {
+    margin: 30px;
+
+}
+
+::-moz-placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+:-ms-input-placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+form textarea {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    background: transparent;
     width: 200px;
     padding: 1em;
     margin-bottom: 2em;
@@ -311,49 +404,6 @@ form input {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-form input:hover {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-}
-
-form input[type=email]:focus,
-form input[type=msj]:focus {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-}
-
-form input[type=button] {
-    margin-top: 10px;
-    width: 150px;
-    font-size: 1rem;
-}
-
-form input[type=button]:hover {
-    cursor: pointer;
-}
-
-form input[type=button]:active {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-form:hover {
-    margin: 4px;
-}
-
-::-moz-placeholder {
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-:-ms-input-placeholder {
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
 ::placeholder {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
@@ -362,15 +412,16 @@ form:hover {
 }
 
 .drop {
-    background: rgba(255, 255, 255, 0.21);
+    background: rgba(255, 133, 198, 0.223);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+    border-radius: 30px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
     position: absolute;
 }
+
 
 .drop-1 {
     height: 80px;
@@ -378,6 +429,7 @@ form:hover {
     top: -20px;
     left: -40px;
     z-index: -1;
+    background: #aaaeff39;
 }
 
 .drop-2 {
@@ -385,6 +437,7 @@ form:hover {
     width: 80px;
     bottom: -30px;
     right: -10px;
+    background: #d0aaff39;
 }
 
 .drop-3 {
@@ -410,10 +463,35 @@ form:hover {
     z-index: -1;
 }
 
+.drop-6 {
+    height: 100px;
+    width: 100px;
+    bottom: -10px;
+    left: -70px;
+}
+
+
+form:hover .drop {
+    border-radius: 70px; /* Makes drops rounded on hover */
+}
+
+
+
 a,
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+@media screen and (max-width: 480px){
+    form{
+        margin: 0px;
+
+    }
+
+    .drop {
+            display: none; /* Hide drops on small screens */
+        }
 }

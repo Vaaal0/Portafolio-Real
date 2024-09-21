@@ -112,7 +112,7 @@ header{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     .menu {
         position: absolute; /* Cambiar a posición absoluta */
         flex-direction: column; /* Cambiar a columna */
@@ -170,9 +170,9 @@ header{
 
 
 /* Media Query para pantallas medianas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .contenedor {
-        grid-template-columns: repeat(1, 1fr); /* Dos columnas en pantallas medianas también */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas también */
     }
 }
 
