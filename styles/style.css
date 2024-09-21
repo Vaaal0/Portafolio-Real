@@ -169,12 +169,14 @@ header {
     position: absolute;
     top: 100%;
     padding: 12%;
+
 }
 
 .about-content {
-    display: flex; /* Cambiado a flex */
+    display: grid; /* Cambiado a flex */
     align-items: flex-start; /* Alinear al inicio */
     text-align: justify;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .about-image {
@@ -204,6 +206,18 @@ header {
     .footer{
         position: absolute;
         top: 200%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Dos columnas en pantallas medianas también */
+
+    }
+
+    .about-image{
+        transform: translateX(50%, -50%);
+        align-items: center;
     }
 }
 
