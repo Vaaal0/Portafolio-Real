@@ -189,35 +189,41 @@ header {
 
 .about-text {
     flex: 1; /* Permitir que el texto ocupe el espacio restante */
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
     color: #abaed6;
 }
 
 @media screen and (max-width: 480px) {
     .about-content {
-        flex-direction: column; /* Colocar la imagen encima del texto */
-        align-items: center; /* Centrar el contenido */
+        flex-direction: column; /* Stack image over text */
+        align-items: center; /* Center all content */
+        justify-content: center; /* Center vertically */
     }
 
     .about-image {
-        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
-    }
+        width: 70vw; /* Increase width on small screens */
+        max-width: none; /* Remove max-width restriction */
+        margin-bottom: 20px; /* Space between image and text */
 
-    .footer{
-        position: absolute;
-        top: 200%;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
     .about-content {
+        flex-direction: column;
         grid-template-columns: 1fr; /* Dos columnas en pantallas medianas también */
+        align-items: center; /* Center all content */
+        justify-content: center; /* Center vertically */
 
     }
 
     .about-image{
-        transform: translateX(50%, -50%);
-        align-items: center;
+        width: 50vw; /* Increase width on small screens */
+        max-width: none; /* Remove max-width restriction */
+        margin-bottom: 20px; /* Space between image and text */
+        border-radius: solid 3px;
+        margin-left: 15%;
+
     }
 }
 
