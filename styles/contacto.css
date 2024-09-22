@@ -68,6 +68,7 @@ body {
     align-items: center;
     gap: 20px;
     top: 100%;
+    padding-bottom: 5%
     left: 50%;
     transform: translate(-50%, -50%);
 }
