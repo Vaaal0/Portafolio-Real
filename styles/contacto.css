@@ -238,7 +238,7 @@ header {
         position: absolute;
         align-items: center;
         gap: 40px;
-        top: 110%;
+        top: 125%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding-bottom: 10%;
