@@ -17,6 +17,16 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+p {
+    text-align: justify;
+    color: #abaed6;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.3rem;
+    padding-bottom: 5%;
+}
+
 .titulo {
     color:#a39af2;
     margin-bottom: 20px; /* Espacio entre el título y el contenedor */
